@@ -1,0 +1,115 @@
+@use "./header.scss";
+@use "./category-list.scss";
+@use "./detail-item.scss";
+@use "./footer.scss";
+@use "./not-found.scss";
+@use "./chatbot-page.scss";
+
+html, body, div, figure, figcaption, section, article, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	background: transparent;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+	text-decoration: none;
+}
+
+a:link,
+button {
+	text-decoration: none;
+	color: #777;
+	-webkit-transition: all 0.5s;
+}
+
+a:visited {
+	text-decoration: none;
+	color: #777; 
+}
+
+a:hover {
+	text-decoration: none;
+	color: #2c2a2a;
+}
+
+a:active {
+	text-decoration: none;
+}
+
+div {
+	height: auto;
+	font-family: Nexa,"Berthold Akzidenz Grotesk BE", Helvetica, verdana, sans-serif;
+}
+
+* {
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+ 	-moz-box-sizing: border-box;		/* Firefox, other Gecko */
+ 	box-sizing: border-box;				 /* Opera/IE 8+ */
+}
+
+@font-face {
+		font-family: Nexa;
+		src: url(../fonts/NexaBold.woff);
+}
+
+body {
+	background: none repeat scroll 0 0 #ccc;
+}
+
+[class*='grid-'] {
+	margin-top: 10px;
+}
+
+.grid-d-4 {
+	overflow:hidden;
+	height:320px;
+}
+
+.view {
+	float: right;
+	margin: 0 30px 0 auto;
+		border: 2px solid rgba(255, 255, 255, 0.4);
+		padding: 10px 30px;
+	color: #fff;
+	transition: all 1s ease;
+
+	&:hover {
+		border-color:rgba(255,255,255,1);
+	}
+}
+
+#wrapper {
+	margin: 0 auto;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	position:relative;
+}
+
+#content,
+header,
+footer {
+	width: 80%;
+	max-width: 1800px;
+		margin: 0 auto;
+		overflow: hidden;
+}
+
+.grid-item {
+	width:30%;
+	height: 320px;
+	position: relative;
+	float:left;
+	overflow:hidden;
+	margin:0 3% 3% 0;
+	-webkit-box-shadow: 1px 1px 1px 1px rgba(197, 197, 197, .5);
+	-moz-box-shadow:		1px 1px 1px 1px rgba(197, 197, 197, .5);
+	box-shadow:				 1px 1px 1px 1px rgba(197, 197, 197, .5);
+}
