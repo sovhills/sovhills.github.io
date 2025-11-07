@@ -127,9 +127,7 @@ export default class ChatbotPage extends React.Component {
 
     render() {
         const categories = [
-            { name: 'Dev', path: '/dev', image: '/images/dev/vi-1-thumb.jpg' },
-            { name: 'Design', path: '/design', image: '/images/design/washed-away-thumb.jpg' },
-            { name: 'Photo', path: '/photo', image: '/images/photo/garden-thumb.jpg' }
+            { name: 'Dev', path: '/dev', image: '/images/dev/vi-1-thumb.jpg' }
         ];
 
         return (
